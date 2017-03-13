@@ -13,7 +13,7 @@ namespace Telegram.Bot.Converters
             var fts = (FileToSend)value;
             switch (fts.Type)
             {
-                case FileType.ID:
+                case FileType.Id:
                     writer.WriteValue(fts.FileId);
                     break;
                 case FileType.Url:
